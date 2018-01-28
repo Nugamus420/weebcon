@@ -1,0 +1,51 @@
+body {
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+#buttons {
+	position: fixed; z-index: 1;
+	left:0; right:0; top:0; bottom:0;
+	width: 100%; height: 100%;
+	overflow: hidden;
+}
+
+#buttons .con {
+	position: absolute;
+	padding: auto;
+	box-sizing: border-box;
+	color: #777;
+	font-size: 2em;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#buttons .con-rect {
+	border-style: outset;
+	border-width: 6px;
+	border-color: #AAA;
+}
+
+#buttons .con-rect.con-active {
+	border-style: inset;
+}
+
+#toolbar {
+	position: fixed; z-index: 10;
+	background-color: white;
+	padding: .3em; font-size: 1.5em;
+	border: solid 2px #222;
+	border-radius: .3em;
+}
+
+#toolbar * {
+	font-size: 1em;
+}
